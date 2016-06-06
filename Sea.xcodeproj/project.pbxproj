@@ -14,7 +14,29 @@
 		DBAAA0381D05B25B0051457B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAAA0361D05B25B0051457B /* Main.storyboard */; };
 		DBAAA03A1D05B25B0051457B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAAA0391D05B25B0051457B /* Assets.xcassets */; };
 		DBAAA03D1D05B25B0051457B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAAA03B1D05B25B0051457B /* LaunchScreen.storyboard */; };
+		DBAAA0771D05B6030051457B /* A.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA0761D05B6030051457B /* A.framework */; };
+		DBAAA0781D05B6030051457B /* A.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA0761D05B6030051457B /* A.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBAAA07B1D05B60B0051457B /* B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA07A1D05B60B0051457B /* B.framework */; };
+		DBAAA07C1D05B60B0051457B /* B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA07A1D05B60B0051457B /* B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBAAA07E1D05B6110051457B /* Bee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA07D1D05B6110051457B /* Bee.framework */; };
+		DBAAA07F1D05B6110051457B /* Bee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBAAA07D1D05B6110051457B /* Bee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBAAA0791D05B6030051457B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DBAAA0781D05B6030051457B /* A.framework in Embed Frameworks */,
+				DBAAA07F1D05B6110051457B /* Bee.framework in Embed Frameworks */,
+				DBAAA07C1D05B60B0051457B /* B.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DBAAA0271D05B25B0051457B /* Sea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sea.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +51,9 @@
 		DBAAA0391D05B25B0051457B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAAA03C1D05B25B0051457B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBAAA03E1D05B25B0051457B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBAAA0761D05B6030051457B /* A.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = A.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAAA07A1D05B60B0051457B /* B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAAA07D1D05B6110051457B /* Bee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAAA0771D05B6030051457B /* A.framework in Frameworks */,
+				DBAAA07E1D05B6110051457B /* Bee.framework in Frameworks */,
+				DBAAA07B1D05B60B0051457B /* B.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +73,9 @@
 		DBAAA01E1D05B25B0051457B = {
 			isa = PBXGroup;
 			children = (
+				DBAAA07D1D05B6110051457B /* Bee.framework */,
+				DBAAA07A1D05B60B0051457B /* B.framework */,
+				DBAAA0761D05B6030051457B /* A.framework */,
 				DBAAA0291D05B25B0051457B /* Sea */,
 				DBAAA0281D05B25B0051457B /* Products */,
 			);
@@ -94,6 +125,7 @@
 				DBAAA0231D05B25B0051457B /* Sources */,
 				DBAAA0241D05B25B0051457B /* Frameworks */,
 				DBAAA0251D05B25B0051457B /* Resources */,
+				DBAAA0791D05B6030051457B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +340,7 @@
 				DBAAA0431D05B25B0051457B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import <B/B.h>
 
 @interface MasterViewController ()
 
@@ -29,6 +30,9 @@
 - (void)viewWillAppear:(BOOL)animated {
 	self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
 	[super viewWillAppear:animated];
+	
+	[[BB new] AAA];
+	[[AA new] AAA];
 }
 
 - (void)didReceiveMemoryWarning {
